@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Backgroud Animado</title>
 </head>
-<body>
-    
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;        
+    }
+    .texto{
+        font-family:'Courier New', Courier, monospace, sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        color: #fff;
+        border: #fff solid 3px;
+        padding: 2rem 4rem;
+    }
+    .gradiente{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(45deg, #F1DDBF,#525E75,#78938A, #92BA92);
+        background-size:400% 400%;
+        animation: cores 15s ease infinite;
+    }
+    @keyframes cores {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+</style>
+<body class="gradiente">
+    <h1 class="texto">BeUp Design</h1>    
 </body>
 </html>
